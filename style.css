@@ -21,6 +21,12 @@ header .logo-dnc {
   margin-left: 46px;
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 div .h2index {
   display: flex;
   justify-content: center;
@@ -45,15 +51,19 @@ div .h4index {
   color: #000000;
 }
 
-.form-login-index {
-  text-align: center;
-  margin-left: auto;
-  display: block;
+.input-container {
+  width: 90%;
 }
 
 form label {
+  display: block;
+}
+
+.form-login-index {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
 }
 
 .digite-nome {
@@ -64,32 +74,18 @@ form label {
 .label-senha {
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
-.input-name {
+.input {
   background: rgba(255, 255, 255, 0.9);
   border: 2px solid #7a7a7a;
   border-radius: 10px;
-  width: 405px;
   height: 43px;
-  width: 524px;
+  width: 100%;
 }
 
-.input-name::placeholder {
-  padding-left: 10px;
-  color: #616161;
-}
-
-.input-senha {
-  background: rgba(255, 255, 255, 0.9);
-  border: 2px solid #7a7a7a;
-  border-radius: 10px;
-  width: 405px;
-  height: 43px;
-  width: 524px;
-}
-
-form .input-senha::placeholder {
+.input::placeholder {
   padding-left: 10px;
   color: #616161;
 }
@@ -100,9 +96,10 @@ form .button-entrar {
   border-radius: 6px;
   align-items: center;
   padding: 12px 26px;
-  width: 524px;
+  width: 90%;
   margin-top: 46px;
   font-weight: 800;
   font-size: 18px;
   color: #ffffff;
+  cursor: pointer;
 }
